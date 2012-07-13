@@ -1,0 +1,12 @@
+<% @posts.each do |post| %>
+  <div class="page-header">
+    <h1><%= link_to post.title, post %></h1>
+  </div>
+  
+  <div>
+    <%= raw post.content %>
+  </div>
+  <hr />
+<% end %>
+
+<%= link_to 'New Post', new_post_path, :class => 'btn' %>
