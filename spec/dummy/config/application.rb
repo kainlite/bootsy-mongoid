@@ -7,14 +7,14 @@ require "active_resource/railtie"
 require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 
-Bundler.require :default, BOOTSY_ORM
+Bundler.require
 
 begin
   require "#{BOOTSY_ORM}/railtie"
 rescue LoadError
 end
 
-require "bootsy/mongoid"
+require "bootsy-mongoid"
 
 module Dummy
   class Application < Rails::Application
@@ -23,7 +23,7 @@ module Dummy
     # -- all .rb files in that directory are automatically loaded.
 
     # Custom directories with classes and modules you want to be autoloadable.
-    config.autoload_paths.reject!{ |p| p =~ /\/app\/(\w+)$/ && !%w(controllers helpers views).include?($1) }
+    config.autoload_paths.reject!{ |p| p =~ /\/app\/(\w+)$/ && !%w(controllers helpers views uploaders).include?($1) }
     config.autoload_paths += [ "#{config.root}/app/#{BOOTSY_ORM}" ]
 
     # Only load the plugins named here, in the order given (default is alphabetical).

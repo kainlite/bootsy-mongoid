@@ -1,3 +1,5 @@
+require 'mongoid'
+
 module Bootsy
   class ImageGallery
     include Mongoid::Document
