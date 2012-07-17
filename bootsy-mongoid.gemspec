@@ -1,9 +1,7 @@
 $:.push File.expand_path("../lib", __FILE__)
 
-# Maintain your gem's version:
 require "bootsy/mongoid/version"
 
-# Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "bootsy-mongoid"
   s.version     = Bootsy::Mongoid::VERSION
@@ -15,7 +13,7 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
 
-  #s.add_dependency "bootsy"
+  s.add_dependency "bootsy"
   s.add_dependency "mongoid"
   #s.add_dependency "carrierwave-mongoid"
 

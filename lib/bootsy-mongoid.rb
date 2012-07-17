@@ -3,4 +3,4 @@ require 'carrierwave/mongoid'
 require 'bootsy'
 require 'bootsy/mongoid/railtie'
 
-BOOTSY_ORM = :mongoid
+BOOTSY_ORM = :mongoid unless defined?(BOOTSY_ORM)
