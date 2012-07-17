@@ -20,8 +20,14 @@ RDoc::Task.new(:rdoc) do |rdoc|
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
 
-
-
-
 Bundler::GemHelper.install_tasks
+
+require 'rspec/core/rake_task'
+
+desc "Run all examples"
+RSpec::Core::RakeTask.new(:spec) do |t|
+  t.rspec_opts = %w[--color]
+end
+
+task :default => :spec
 
