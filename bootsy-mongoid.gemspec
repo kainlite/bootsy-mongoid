@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["lrvolmer@gmail.com"]
   s.homepage    = "http://github.com/volmer/bootsy-mongoid"
   s.summary     = "Mongoid support for Bootsy"
-  s.description = "Mongoid support for Bootsy."
+  s.description = "Bootsy-mongoid adds support for Mongoid to Bootsy. If your Rails project uses Mongoid, please add this gem instead the original Bootsy."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
 

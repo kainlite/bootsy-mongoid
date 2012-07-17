@@ -1,8 +1,8 @@
 module Bootsy
   module Mongoid
     class Railtie < Rails::Railtie
-      initializer 'bootsy.configure_mongoid_support' do
-        Bootsy::Image.send :mount_uploader, :image_file, Bootsy::ImageUploader
+      config.after_initialize do
+        Dir[File.expand_path('../models/*.rb', __FILE__)].each {|f| require f }
       end
     end
   end
