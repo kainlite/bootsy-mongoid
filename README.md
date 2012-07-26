@@ -1,7 +1,8 @@
-Bootsy-mongoid
-==========
+Bootsy-Mongoid
+==============
+[![Build Status](https://secure.travis-ci.org/volmer/bootsy-mongoid.png?branch=master)](http://travis-ci.org/volmer/bootsy-mongoid)
 
-*Bootsy-mongoid* adds support for Mongoid to [Bootsy](https://github.com/volmer/bootsy). If your Rails project uses Mongoid, please add this gem instead the original Bootsy.
+*Bootsy-Mongoid* adds support for Mongoid to [Bootsy](https://github.com/volmer/bootsy). If your Rails project uses Mongoid, please add this gem instead the original Bootsy.
 
 
 ## Installation
@@ -26,7 +27,7 @@ Bootsy-mongoid
 
 ## Requirements, usage and more
 
-Please read the [Bootsy README](https://github.com/volmer/bootsy).
+Please read the [Bootsy README](https://github.com/volmer/bootsy/blob/master/README.md).
 
 
 ## License
