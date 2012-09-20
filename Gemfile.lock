@@ -10,7 +10,7 @@ GIT
 PATH
   remote: .
   specs:
-    bootsy-mongoid (0.0.3)
+    bootsy-mongoid (0.1.0)
       bootsy (~> 0.1.0)
       mongoid (~> 3.0.6)
 
