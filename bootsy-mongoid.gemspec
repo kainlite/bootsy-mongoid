@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "bootsy", "~> 0.1.8"
-  s.add_dependency "mongoid", "~> 3.0.21"
+  s.add_dependency "mongoid", "~> 3.1"
   s.add_dependency "carrierwave-mongoid", "~> 0.4.0"
 
   s.add_development_dependency "sqlite3", "~> 1.3"
