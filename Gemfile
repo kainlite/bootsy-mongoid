@@ -1,7 +1,5 @@
 source "http://rubygems.org"
 
-gem 'mongoid'
-
 gem 'rails', "~> 3.2"
 
 gemspec
