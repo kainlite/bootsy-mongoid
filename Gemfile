@@ -1,10 +1,8 @@
-source "http://rubygems.org"
-
-gem 'mongoid'
-
-gem 'rails', "~> 3.2.11"
+source 'https://rubygems.org'
 
 gemspec
 
-# jquery-rails is used by the dummy application
-gem "jquery-rails"
+# Gems used by the dummy application
+gem 'rails', '~> 3.2'
+gem 'jquery-rails', '~> 2.2'
+gem 'twitter-bootstrap-rails', '~> 2.2'
