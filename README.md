@@ -2,6 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/bootsy-mongoid.png)](http://badge.fury.io/rb/bootsy-mongoid)
 [![Build Status](https://secure.travis-ci.org/volmer/bootsy-mongoid.png?branch=master)](http://travis-ci.org/volmer/bootsy-mongoid)
+[![Dependency Status](https://gemnasium.com/volmer/bootsy-mongoid.png)](https://gemnasium.com/volmer/bootsy-mongoid)
 
 *Bootsy-Mongoid* adds support for Mongoid to [Bootsy](https://github.com/volmer/bootsy). If your Rails project uses Mongoid, please add this gem instead the original Bootsy.
 
