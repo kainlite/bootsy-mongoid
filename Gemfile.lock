@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bootsy-mongoid (0.1.1)
+    bootsy-mongoid (0.2.0)
       bootsy (~> 0.2.1)
       carrierwave-mongoid (~> 0.5.0)
       mongoid (~> 3.1.2)
