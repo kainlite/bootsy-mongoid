@@ -1,21 +1,14 @@
 require 'spec_helper'
 
 describe Bootsy::Image do
-  before :each do
-    @image = FactoryGirl.build :image
-  end
+  it { should be_timestamped_document }
 
-  it 'is valid with proper values' do
-    @image.should be_valid
-  end
+  it { should belong_to(:image_gallery) }
 
-  it 'is not valid without a gallery' do
-    @image.image_gallery = nil
-    @image.should_not be_valid
-  end
+  it { should allow_mass_assignment_of(:image_file) }
 
-  it 'is not valid without an image file' do
-    @image.remove_image_file!
-    @image.should_not be_valid
-  end
+  it { should validate_presence_of(:image_file) }
+  it { should validate_presence_of(:image_gallery_id) }
+
+  its(:image_file){ should be_an_instance_of(Bootsy::ImageUploader) }
 end

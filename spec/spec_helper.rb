@@ -8,18 +8,21 @@ require File.expand_path("../dummy/config/environment.rb",  __FILE__)
 require 'rspec/rails'
 require 'factory_girl_rails'
 require 'database_cleaner'
+require 'mongoid-rspec'
 
 RSpec.configure do |config|
-    config.before(:suite) do
-      DatabaseCleaner.strategy = :truncation
-      DatabaseCleaner.clean_with(:truncation)
-    end
+  config.include Mongoid::Matchers
 
-    config.before(:each) do
-      DatabaseCleaner.start
-    end
+  config.before(:suite) do
+    DatabaseCleaner.strategy = :truncation
+    DatabaseCleaner.clean_with :truncation
+  end
 
-    config.after(:each) do
-      DatabaseCleaner.clean
-    end
+  config.before(:each) do
+    DatabaseCleaner.start
+  end
+
+  config.after(:each) do
+    DatabaseCleaner.clean
+  end
 end

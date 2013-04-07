@@ -20,4 +20,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec-rails', '~> 2.13'
   s.add_development_dependency 'factory_girl_rails', '~> 4.2'
   s.add_development_dependency 'database_cleaner', '~> 0.9'
+  s.add_development_dependency 'mongoid-rspec', '~> 1.7'
 end
