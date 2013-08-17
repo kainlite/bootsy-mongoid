@@ -7,6 +7,8 @@
 
 *Bootsy-Mongoid* adds support for Mongoid to [Bootsy](https://github.com/volmer/bootsy). If your Rails app uses Mongoid, please add this gem instead the original Bootsy.
 
+*WARNING: this project will be descontinued shortly. The Mongoid support will be merged in the main Bootsy project.*
+
 
 ## Installation
 
